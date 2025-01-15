@@ -6,32 +6,37 @@
     <title>Nora Winter-Deely</title>
     <style>
       body {
-          background-color: #d7d8d2;
+          background-image: url('');
+          overflow: hidden;
+          display: flex;
+      	  height: 100vh;
+          margin: 0;
+          background-color: black;
       }
-      h1 {
-          color: #384b83;
+      
+      h1, h2, p {
+          color: black;
       }
-      p {
-          color: #227194;
-      }
-      section {
-          padding: 20px;
+      
+      .fixed {
+      	  padding: 20px;
           width: 30%;
-          margin-left: 15px;
-          float: left;
           background-color: gray;
+          position: fixed;
+          height: 100vh;
       }
-      aside {
-          width: 30%;
-          padding-left: 15px;
-          margin-left: 15px;
-          float: right;
-          background-color: lightgray;
+      
+      .scrollable {
+      	  padding: 70px;
+          width: 70%;
+          margin-left: 30%;
+          background-color: lightblue;
+          overflow-y: auto;
       }
     </style>
   </head>
   <body>
-    <section>
+    <div class="fixed">
       <h1>Hello World!</h1>
       <h2>
         My name is Nora Winter-Deely, I am a high school graduate 
@@ -39,14 +44,33 @@
         a specific job or role, I'm looking for a job that helps me build on my 
         existing passions while developing skills in new areas. </h2>
       <p>
-        Contact me here ➡️ norarwinter@gmail.com
+        Contact me here ➡️ <a href="mailto:norarwinter@gmail.com">norarwinter@gmail.com</a>
       </p>
-    </section>
-    <aside>
+      <a href="www.linkedin.com/in/nora-winter-deely-3a2b80289">
+      <img src="" style="width:42px;height:42px;">
+      </a>
+      <a href="https://github.com/LunaDisconnected">
+      <img src="" style="width:42px;height:42px;">
+      </a>
+    </div>
+    <div class="scrollable">
       <h2>About me</h2>
       <p>
-        put information about myself here
+        I just graduated high school so I'm looking for what I'll do next!
+        In my free time I enjoy practicing my japanese and developing games
+        that I come up with. I often come up with crazy ideas and I follow
+        them through to see where they take me. Sometimes those ideas are
+        spending a weekend fixing a water damaged gameboy or spending a
+        year crocheting a blanket. I like how these ideas push me to learn
+        and do things I would've never thought to do, and it gives me a new way
+        of thinking for my next idea.
       </p>
-    </aside>
+      <p>
+      	Currently I'm looking for an internship or entry level position while
+        I wait to hear back from colleges.
+      </p>
+      <h2>Projects</h2>
+      <p>put projects here</p>
+    </div>
   </body>
 </html>
